@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 @Component({
 
     templateUrl: './signin-page.component.html',
+    standalone: true,
     styles: [`
         button {
             padding: 5px;
