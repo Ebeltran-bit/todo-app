@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
+import { SignupForm } from "../../components/signup-form/signin-form";
 
 @Component({
 
-    templateUrl: './signin-page.component.html',
+    templateUrl: './signup-page.component.html',
     standalone: true,
     styles: [`
         button {
@@ -10,11 +11,12 @@ import { Component } from "@angular/core";
             margin: 5px 10px;
             width: 75px;
         }
-    `]
+    `],
+    imports: [SignupForm]
 
 })
 
-export class SigninPageComponent {
+export class SignupPageComponent {
 
     
 }
