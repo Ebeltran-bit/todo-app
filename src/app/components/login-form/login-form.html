@@ -2,7 +2,9 @@
 <input pInputText type="text" name="name" placeholder="Enter your username" />
 
 <h3>Password</h3>
-<p-password name="password" placeholder="Enter your password"  />
+<p-password name="password" placeholder="Enter your password"  [feedback]="false"/>
+<!--We use [feedback] to disable password strength feedback -->
 
 <br><br>
 <p-button type="submit" label="Login" />
+<!--This button must have a click action so that it can check if the user exists and redirect to the main page -->
