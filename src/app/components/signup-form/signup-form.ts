@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
-  selector: 'app-login-form',
-  templateUrl: './login-form.html',
+  selector: 'app-signup-form',
+  templateUrl: './signup-form.html',
   standalone: true,
-  imports: [InputTextModule, PasswordModule, ButtonModule]
+  imports: [RouterLink, InputTextModule, PasswordModule, ButtonModule]
 })
-export class LoginForm {}
+export class SignupForm {}

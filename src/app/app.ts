@@ -6,7 +6,7 @@ import { LoginForm } from "./components/login-form/login-form";
   selector: 'app-root',
   imports: [RouterOutlet, LoginForm],
   templateUrl: './app.html',
-  styleUrl: './app.scss'
+  styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('todo-app');

@@ -1,22 +1,11 @@
-import { Component } from "@angular/core";
-import { SignupForm } from "../../components/signup-form/signin-form";
+import { Component } from '@angular/core';
+import { SignupForm } from '../../components/signup-form/signup-form';
+import { CardModule } from 'primeng/card';
 
 @Component({
-
-    templateUrl: './signup-page.component.html',
-    standalone: true,
-    styles: [`
-        button {
-            padding: 5px;
-            margin: 5px 10px;
-            width: 75px;
-        }
-    `],
-    imports: [SignupForm]
-
+  selector: 'app-signup-page',
+  templateUrl: './signup-page.component.html',
+  standalone: true,
+  imports: [SignupForm, CardModule]
 })
-
-export class SignupPageComponent {
-
-    
-}
+export class SignupPageComponent {}
