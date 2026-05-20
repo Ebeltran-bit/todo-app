@@ -1,0 +1,104 @@
+<div class="sidebar-container">
+    <div class="sidebar-header">
+        <h2 class="title">Todo List.</h2>
+        <p class="subtitle">Manage your tasks and activities</p>
+    </div>
+
+    <div class="user-profile">
+        <div class="avatar">
+        <i class="pi pi-user"></i>
+        </div>
+        <div class="user-info">
+        <p class="welcome-text">Welcome back,</p>
+        <p class="user-name">Name</p>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Tasks</h2>
+    </div>
+
+    <ul class="nav-list">
+        <li>
+        <a routerLink="/dashboard/tasks/non-started" routerLinkActive="active-item" class="nav-link">
+            <i class="pi pi-times-circle"></i>
+            <span>Non started</span>
+        </a>
+        </li>
+
+        <li>
+        <a routerLink="/dashboard/tasks/in-progress" routerLinkActive="active-item" class="nav-link">
+            <i class="pi pi-spinner-dotted"></i>
+            <span>In progress</span>
+        </a>
+        </li>
+
+        <li>
+        <a routerLink="/dashboard/tasks/paused" routerLinkActive="active-item" class="nav-link">
+            <i class="pi pi-stop-circle"></i>
+            <span>Paused</span>
+        </a>
+        </li>
+
+        <li>
+        <a routerLink="/dashboard/tasks/late" routerLinkActive="active-item" class="nav-link">
+            <i class="pi pi-clock"></i>
+            <span>Late</span>
+        </a>
+        </li>
+
+        <li>
+        <a routerLink="/dashboard/tasks/finished" routerLinkActive="active-item" class="nav-link">
+            <i class="pi pi-check"></i>
+            <span>Finished</span>
+        </a>
+        </li>
+    </ul>
+
+    <div class="section-title mt-4">
+        <h2>Category</h2>
+    </div>
+
+    <ul class="nav-list">
+        <li>
+        <a href="#" class="nav-link">
+            <i class="pi pi-circle-fill icon-red"></i>
+            <span>Category 1</span>
+        </a>
+        </li>
+        <li>
+        <a href="#" class="nav-link">
+            <i class="pi pi-circle-fill icon-green"></i>
+            <span>Category 2</span>
+        </a>
+        </li>
+
+        <li>
+        <a href="#" class="nav-link">
+            <i class="pi pi-plus"></i>
+            <span>Add New List</span>
+        </a>
+        </li>
+    </ul>
+
+        
+
+    <div class="sidebar-south">
+
+    <ul class="nav-list">
+        <li>
+        <a routerLink="/dashboard/tasks/non-started" routerLinkActive="active-item" class="nav-link">
+            <i class="pi pi-calendar"></i>
+            <span>Calendar</span>
+        </a>
+        </li>
+        <li>
+        <a routerLink="/dashboard/tasks/non-started" routerLinkActive="active-item" class="nav-link">
+            <i class="pi pi-sign-out"></i>
+            <span>Sign Out</span>
+        </a>
+        </li>
+    </ul>    
+</div>
+</div>
+
