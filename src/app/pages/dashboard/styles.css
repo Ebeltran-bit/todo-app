@@ -106,3 +106,9 @@
 .sidebar-container {
     display: flex;
 }
+
+.sidebar-south {
+    margin-top: 70px;
+    padding: 16px;
+    border-top: 1px solid #333;
+}
