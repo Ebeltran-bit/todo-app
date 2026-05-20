@@ -1,0 +1,108 @@
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px; 
+    height: 100vh;
+    background: #1e2030;
+    padding: 16px 0;
+    color: white;
+}
+
+.sidebar-header {
+    padding: 0 16px 24px;
+}
+
+.title {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.subtitle {
+    color: #ffffff60;
+    font-size: 11px;
+    margin: 4px 0 0;
+}
+
+.user-profile {
+    padding: 0 16px 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.welcome-text {
+    color: #ffffff80;
+    font-size: 11px;
+    margin: 0;
+}
+
+.user-name {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.section-title h2 {
+    margin-left: 16px;
+    font-size: 18px;
+    color: white;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #ffffff80;
+    transition: all 0.2s;
+}
+
+.nav-link span {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: #ffffff10;
+}
+
+/* Style for active navigation item */
+.active-item {
+    background: #4f46e5 !important;
+    color: white !important;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+
+.icon-red { 
+    color: red; 
+}
+.icon-green { 
+    color: rgb(98, 255, 0); 
+}
+.mt-4 {
+    margin-top: 24px; 
+}
+
+.sidebar-container {
+    display: flex;
+}
