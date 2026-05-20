@@ -2,8 +2,17 @@
   <p-card title="User Login">
     <h1>Welcome Back!</h1>
     <p>Login to your account to manage your tasks.</p>
-    <app-login-form/>
-    <h5>Don't have an account?</h5>
+    <h3>Name</h3>
+    <input pInputText type="text" name="name" placeholder="Enter your username" />
+
+    <h3>Password</h3>
+    <p-password name="password" placeholder="Enter your password"  [feedback]="false"/>
+    <!--We use [feedback] to disable password strength feedback -->
+
+    <br><br>
+    <p-button type="submit" label="Login" />
+    <!--This button must have a click action so that it can check if the user exists and redirect to the main page -->
+        <h5>Don't have an account?</h5>
     <a routerLink="/signup" routerLinkActive="active">Sign Up here</a>
   </p-card>
 </div>

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
-import { LoginForm } from '../../components/login-form/login-form';
 import { CardModule } from 'primeng/card';
+import { Password } from "primeng/password";
+import { Button } from "primeng/button";
 
 @Component({
     selector: 'app-login-page',
     templateUrl: './login-page.component.html',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, LoginForm, CardModule]
+  imports: [RouterLink, RouterLinkActive, CardModule, Password, Button]
 })
 export class LoginPageComponent {}

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { SignupForm } from '../../components/signup-form/signup-form';
 import { CardModule } from 'primeng/card';
+import { Password } from "primeng/password";
+import { Button } from "primeng/button";
 
 @Component({
   selector: 'app-signup-page',
   templateUrl: './signup-page.component.html',
   standalone: true,
-  imports: [SignupForm, CardModule]
+  imports: [CardModule, Password, Button]
 })
 export class SignupPageComponent {}
