@@ -1,17 +1,21 @@
-<div style="display:flex; justify-content:center; align-items:center; height:100vh;">
+<div class="card-container">
   <p-card title="User Signup">
     <h1>Join Us!</h1>
     <p>Create an account to start managing your tasks.</p>
     <h3>Name</h3>
-    
+
     <input pInputText type="text" name="name" placeholder="Enter your new username" />
 
     <h3>Email</h3>
     <input pInputText type="email" name="email" placeholder="Enter your email" />
 
     <h3>Password</h3>
-    <p-password name="password" placeholder="Enter your new password" [feedback]="false" />
-    <!--We use [feedback] to disable password strength feedback -->
+    <p-password name="password"
+                placeholder="Enter your new password" 
+                [feedback]="false" 
+                [toggleMask]="true" />
+                <!--We use [feedback] to disable password strength feedback
+                And [toggleMask] to show/hide password -->
 
     <br><br>
     <p-button type="submit" label="Sign up and go to Login" routerLink="/" />

@@ -1,0 +1,13 @@
+/* Usamos una clase para centrar todo el contenido en pantalla */
+.card-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+
+h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
