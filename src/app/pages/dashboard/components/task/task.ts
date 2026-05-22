@@ -9,7 +9,7 @@ import { SelectModule } from 'primeng/select';
   standalone: true,
   imports: [RouterLink, RouterLinkActive,  FormsModule, DatePickerModule, SelectModule],
   templateUrl: './task.html',
-  styleUrls: ['../../styles.css']
+  styleUrls: ['./task-styles.css']
 })
 
 export class TaskComponent {

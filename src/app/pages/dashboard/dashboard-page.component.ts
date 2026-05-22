@@ -8,6 +8,6 @@ import { TaskComponent } from "./components/task/task";
     standalone: true,
     imports: [RouterModule, SidebarComponent, TaskComponent],
     templateUrl: './dashboard-page.component.html',
-    styleUrl: './styles.css'
+    styleUrl: './dashboard-styles.css'
 })
 export default class DashboardPageComponent {}

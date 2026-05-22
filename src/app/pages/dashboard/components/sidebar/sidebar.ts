@@ -17,7 +17,7 @@ interface MenuOption {
   standalone: true,
   imports: [SidebarHeaderComponent, SidebarMenuComponent],
   templateUrl: './sidebar.html',
-  styleUrls: ['../../styles.css']
+  styleUrls: ['../../dashboard-styles.css']
 })
 
 export class SidebarComponent {

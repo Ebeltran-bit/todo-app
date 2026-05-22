@@ -18,7 +18,7 @@ interface CategoryOption {
   selector: 'app-sidebar-menu',
   imports: [RouterLink, RouterLinkActive, CommonModule],
   templateUrl: './sidebar-menu.html',
-  styleUrls: ['../../../styles.css']
+  styleUrls: ['../../../dashboard-styles.css']
 })
 
 export class SidebarMenuComponent {
