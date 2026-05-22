@@ -26,7 +26,7 @@ export class SidebarMenuComponent {
 
     {
       label: 'Non started',
-      route: '/dashboard/non-started',
+      route: '/dashboard/nonstarted',
       icon: 'pi pi-times-circle'
     },
     {

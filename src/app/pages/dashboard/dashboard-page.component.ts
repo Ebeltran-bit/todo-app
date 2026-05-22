@@ -10,4 +10,4 @@ import { TaskComponent } from "./components/task/task";
     templateUrl: './dashboard-page.component.html',
     styleUrl: './styles.css'
 })
-export class DashboardPageComponent {}
+export default class DashboardPageComponent {}
