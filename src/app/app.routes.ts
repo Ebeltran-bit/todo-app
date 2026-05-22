@@ -27,22 +27,21 @@ export const routes: Routes = [
             },
             {
                 path: 'inprogress',
-                loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
+                loadComponent: () => import('./pages/dashboard/components/inprogress-page/inprogress-page')
             },
             {
                 path: 'paused',
-                loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
-            },
+                loadComponent: () => import('./pages/dashboard/components/paused-page/paused-page')},
             {
                 path: 'late',
-                loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
+                loadComponent: () => import('./pages/dashboard/components/late-page/late-page')
             },
             {
                 path: 'finished',
-                loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
+                loadComponent: () => import('./pages/dashboard/components/finished-page/finished-page')
             },
             {
-                path: 'category-1',
+                path: 'category1',
                 loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
             },
             {
