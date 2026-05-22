@@ -1,5 +1,6 @@
-import { Component, inject } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
+import { Component } from '@angular/core';
+import { SidebarHeaderComponent } from "./sidebar-header/sidebar-header";
+import { SidebarMenuComponent } from "./sidebar-menu/sidebar-menu";
 
 /**
  * Sidebar component for navigation and filtering tasks by status and category
@@ -7,7 +8,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive],
+  imports: [SidebarHeaderComponent, SidebarMenuComponent],
   templateUrl: './sidebar.html',
   styleUrls: ['../../styles.css']
 })
