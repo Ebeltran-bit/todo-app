@@ -3,40 +3,19 @@
     </div>
 
     <ul class="nav-list">
+        
+        @for(item of menuOptions; track item.route){
         <li>
-        <a routerLink="/dashboard/tasks/non-started" routerLinkActive="active-item" class="nav-link">
-            <i class="pi pi-times-circle"></i>
-            <span>Non started</span>
-        </a>
-        </li>
 
-        <li>
-        <a routerLink="/dashboard/tasks/in-progress" routerLinkActive="active-item" class="nav-link">
-            <i class="pi pi-spinner-dotted"></i>
-            <span>In progress</span>
-        </a>
-        </li>
+        
+            <a routerLink="{{item.route}}" routerLinkActive="active-item" class="nav-link">
+                <i class="{{item.icon}}"></i>
+                <span>{{item.label}}</span>
+            </a>
 
-        <li>
-        <a routerLink="/dashboard/tasks/paused" routerLinkActive="active-item" class="nav-link">
-            <i class="pi pi-stop-circle"></i>
-            <span>Paused</span>
-        </a>
         </li>
+        }
 
-        <li>
-        <a routerLink="/dashboard/tasks/late" routerLinkActive="active-item" class="nav-link">
-            <i class="pi pi-clock"></i>
-            <span>Late</span>
-        </a>
-        </li>
-
-        <li>
-        <a routerLink="/dashboard/tasks/finished" routerLinkActive="active-item" class="nav-link">
-            <i class="pi pi-check"></i>
-            <span>Finished</span>
-        </a>
-        </li>
     </ul>
 
     <div class="section-title mt-4">
