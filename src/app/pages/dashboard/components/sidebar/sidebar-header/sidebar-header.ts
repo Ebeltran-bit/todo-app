@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-sidebar-header',
   imports: [],
   templateUrl: './sidebar-header.html',
-  styleUrls: ['../../../styles.css']
+  styleUrls: ['../../../dashboard-styles.css']
 })
 
 export class SidebarHeaderComponent {}
