@@ -31,7 +31,7 @@ export class SidebarMenuComponent {
     },
     {
       label: 'In progress',
-      route: '/dashboard/in-progress',
+      route: '/dashboard/inprogress',
       icon: 'pi pi-spinner'
     },
     {
