@@ -40,14 +40,7 @@ export const routes: Routes = [
                 path: 'finished',
                 loadComponent: () => import('./pages/dashboard/components/finished-page/finished-page')
             },
-            {
-                path: 'category1',
-                loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
-            },
-            {
-                path: 'category-2',
-                loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
-            },
+            
 
         ]
     }
