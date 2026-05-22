@@ -3,7 +3,7 @@
     </div>
 
     <ul class="nav-list">
-        
+
         @for(item of menuOptions; track item.route){
         <li>
 
@@ -23,25 +23,19 @@
     </div>
 
     <ul class="nav-list">
+        
+        @for(item of categoryOptions; track item.route){
         <li>
-        <a href="#" class="nav-link">
-            <i class="pi pi-circle-fill icon-red"></i>
-            <span>Category 1</span>
-        </a>
-        </li>
-        <li>
-        <a href="#" class="nav-link">
-            <i class="pi pi-circle-fill icon-green"></i>
-            <span>Category 2</span>
-        </a>
-        </li>
 
-        <li>
-        <a href="#" class="nav-link">
-            <i class="pi pi-plus"></i>
-            <span>Add New List</span>
-        </a>
+        
+            <a routerLink="{{item.route}}" routerLinkActive="active-item" class="nav-link">
+                <i class="{{item.icon}}"></i>
+                <span>{{item.label}}</span>
+            </a>
+
         </li>
+        }
+        
     </ul>
 
         

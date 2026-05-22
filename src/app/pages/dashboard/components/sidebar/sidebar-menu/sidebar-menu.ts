@@ -8,6 +8,12 @@ interface MenuOption {
   icon: string;
 }
 
+interface CategoryOption {
+  label: string;
+  route: string;
+  icon: string;
+}
+
 @Component({
   selector: 'app-sidebar-menu',
   imports: [RouterLink, RouterLinkActive, CommonModule],
@@ -44,6 +50,26 @@ export class SidebarMenuComponent {
       icon: 'pi pi-check'
     }
 
+  ]
+
+  categoryOptions: CategoryOption[] = [
+    {
+      label: 'Category 1',
+      route: '/dashboard/category-1',
+      icon: 'pi pi-circle-fill icon-red'
+    },
+    
+    {
+      label: 'Category 2',
+      route: '/dashboard/category-2',
+      icon: 'pi pi-circle-fill icon-green'
+    },
+
+    {
+      label: 'Add New List',
+      route: '/dashboard/add-list',
+      icon: 'pi pi-plus'
+    }
   ]
 
   
