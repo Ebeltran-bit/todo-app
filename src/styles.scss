@@ -1,1 +1,21 @@
 @import 'primeicons/primeicons.css';
+
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar-left {
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar-right {
+    flex-shrink: 0;
+}

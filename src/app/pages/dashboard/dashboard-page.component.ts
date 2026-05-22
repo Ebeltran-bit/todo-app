@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Sidebar } from './components/sidebar';
+import { SidebarComponent } from './components/sidebar/sidebar';
+import { TaskComponent } from "./components/task/task";
 
 @Component({
     selector: 'app-dashboard-page',
     standalone: true,
-    imports: [Sidebar, RouterModule],
-    templateUrl: './dashboard-page.component.html'
+    imports: [RouterModule, SidebarComponent, TaskComponent],
+    templateUrl: './dashboard-page.component.html',
+    styleUrl: './styles.css'
 })
 export class DashboardPageComponent {}

@@ -1,7 +1,9 @@
+/* LEFT SIDEBAR */
+
 .sidebar-container {
     display: flex;
     flex-direction: column;
-    width: 200px; 
+    width: 200px;
     height: 100vh;
     background: #1e2030;
     padding: 16px 0;
@@ -85,7 +87,6 @@
     background: #ffffff10;
 }
 
-/* Style for active navigation item */
 .active-item {
     background: #4f46e5 !important;
     color: white !important;
@@ -93,22 +94,222 @@
     margin: 0 8px;
 }
 
-.icon-red { 
-    color: red; 
-}
-.icon-green { 
-    color: rgb(98, 255, 0); 
-}
-.mt-4 {
-    margin-top: 24px; 
+.icon-red {
+    color: red;
 }
 
-.sidebar-container {
-    display: flex;
+.icon-green {
+    color: rgb(98, 255, 0);
+}
+
+.mt-4 {
+    margin-top: 24px;
 }
 
 .sidebar-south {
     margin-top: 50px;
     padding: 16px;
     border-top: 1px solid #333;
+}
+
+/* MAIN LAYOUT */
+
+.layout-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar-left {
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.sidebar-right {
+    flex-shrink: 0;
+}
+
+/* TASK PANEL */
+
+.task-panel-container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100vh;
+    background: #1e2030;
+    padding: 16px 0;
+    color: white;
+    overflow-y: auto;
+}
+
+/* ── Header ── */
+.task-panel-header {
+    padding: 0 16px 24px;
+    border-bottom: 1px solid #333;
+}
+
+.task-panel-title {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.task-panel-subtitle {
+    color: #ffffff60;
+    font-size: 11px;
+    margin: 4px 0 0;
+}
+
+/* ── Sections ── */
+.task-panel-section {
+    padding: 16px 0 8px;
+    border-bottom: 1px solid #333;
+}
+
+.task-panel-section-title {
+    margin: 0 0 8px 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff60;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* ── Form fields ── */
+.task-panel-field {
+    padding: 0 16px;
+    margin-bottom: 12px;
+}
+
+.task-panel-label {
+    display: block;
+    font-size: 11px;
+    color: #ffffff60;
+    margin-bottom: 6px;
+}
+
+.task-panel-input {
+    width: 100%;
+    background: #ffffff10;
+    border: 1px solid #ffffff20;
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: white;
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border 0.2s;
+}
+
+.task-panel-input:focus {
+    border-color: #4f46e5;
+}
+
+.task-panel-textarea {
+    width: 100%;
+    background: #ffffff10;
+    border: 1px solid #ffffff20;
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: white;
+    font-size: 12px;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+    height: 72px;
+    transition: border 0.2s;
+}
+
+.task-panel-textarea:focus {
+    border-color: #4f46e5;
+}
+
+/* ── Option lists (status / category) ── */
+.task-panel-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-panel-option-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #ffffff80;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+
+.task-panel-option-link:hover {
+    background: #ffffff10;
+}
+
+.active-task-panel-item {
+    background: #4f46e5 !important;
+    color: white !important;
+    border-radius: 8px;
+    margin: 0 8px;
+    padding: 8px 8px !important;
+}
+
+/* ── Category icon colors ── */
+.task-panel-icon-red {
+    color: #f87171;
+}
+
+.task-panel-icon-green {
+    color: #4ade80;
+}
+
+/* ── Footer buttons ── */
+.task-panel-footer {
+    margin-top: auto;
+    padding: 16px;
+    border-top: 1px solid #333;
+    display: flex;
+    gap: 8px;
+}
+
+.task-panel-btn-cancel {
+    flex: 1;
+    padding: 8px 0;
+    background: transparent;
+    border: 1px solid #ffffff30;
+    border-radius: 6px;
+    color: #ffffff80;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.task-panel-btn-cancel:hover {
+    background: #ffffff10;
+}
+
+.task-panel-btn-create {
+    flex: 1;
+    padding: 8px 0;
+    background: #4f46e5;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.task-panel-btn-create:hover {
+    background: #4338ca;
 }
