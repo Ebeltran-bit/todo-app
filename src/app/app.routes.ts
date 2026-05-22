@@ -23,7 +23,7 @@ export const routes: Routes = [
 
             {
                 path: 'nonstarted',
-                loadComponent: () => import('./pages/nonstarted-page/nonstarted-page')
+                loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
             }
 
         ]
