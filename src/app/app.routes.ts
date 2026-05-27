@@ -16,6 +16,11 @@ export const routes: Routes = [
     },
 
     {
+        path: 'new-task',
+        loadComponent: () => import('./pages/dashboard/components/task/task')
+    },
+
+    {
         path: 'dashboard',
         loadComponent: () => import('./pages/dashboard/dashboard-page.component'),
 

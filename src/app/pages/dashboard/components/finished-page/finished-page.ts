@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TaskViewComponent } from "../../../../shared/components/task-view.component/task-view.component";
 
 @Component({
   selector: 'app-finished-page',
-  imports: [],
+  imports: [TaskViewComponent],
   templateUrl: './finished-page.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

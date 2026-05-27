@@ -12,7 +12,7 @@ import { SelectModule } from 'primeng/select';
   styleUrls: ['./task-styles.css']
 })
 
-export class TaskComponent {
+export default class TaskComponent {
   categories = [
     { name: 'Category 1' },
     { name: 'Category 2' }

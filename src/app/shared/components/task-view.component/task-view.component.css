@@ -1,0 +1,27 @@
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #ffffff80;
+    transition: all 0.2s;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    
+}
+
+.nav-link span {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    background: #ffffff10;
+}
