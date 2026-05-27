@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
-import { TaskPanelService } from '../../../services/task-panel.service'; 
+import { ButtonModule } from 'primeng/button';
+import { TaskPanelService } from '../../../services/task-panel.service';
 
 @Component({
   selector: 'app-task-view',
-  imports: [],
+  imports: [ButtonModule],
   templateUrl: './task-view.component.html',
   styleUrls: ['./task-view.component.css']
 })

@@ -1,12 +1,13 @@
 <div>
     <ul class="nav-list">
         <li>
-
-            <button (click)="taskPanel.open()" class="nav-link">
-                <i class="pi pi-plus"></i>
-                <span>Add New Task</span>
-            </button>
-
+        <button 
+            pButton 
+            label="Add New Task" 
+            icon="pi pi-plus"
+            severity="secondary"
+            (click)="taskPanel.open()">
+        </button>
         </li>
     </ul>
 </div>
