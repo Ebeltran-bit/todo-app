@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject} from '@angular/core';
+import { TaskPanelService } from '../../../../services/task-panel.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FormsModule } from '@angular/forms'; 
 import { DatePickerModule } from 'primeng/datepicker';
@@ -13,6 +14,9 @@ import { SelectModule } from 'primeng/select';
 })
 
 export default class TaskComponent {
+
+  taskPanel = inject(TaskPanelService);
+
   categories = [
     { name: 'Category 1' },
     { name: 'Category 2' }
