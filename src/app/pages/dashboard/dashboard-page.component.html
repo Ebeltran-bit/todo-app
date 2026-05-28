@@ -10,8 +10,10 @@
         </div>
     </div>
 
-    <div class="sidebar-right">
-        <app-task />
-    </div>
+    @if (taskPanel.isOpen()) {
+        <div class="sidebar-right">
+            <app-task />
+        </div>
+    }
     
 </div>

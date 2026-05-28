@@ -16,6 +16,11 @@ export const routes: Routes = [
     },
 
     {
+        path: 'new-task',
+        loadComponent: () => import('./pages/dashboard/components/task/task')
+    },
+
+    {
         path: 'dashboard',
         loadComponent: () => import('./pages/dashboard/dashboard-page.component'),
 
@@ -24,7 +29,23 @@ export const routes: Routes = [
             {
                 path: 'nonstarted',
                 loadComponent: () => import('./pages/dashboard/components/nonstarted-page/nonstarted-page')
-            }
+            },
+            {
+                path: 'inprogress',
+                loadComponent: () => import('./pages/dashboard/components/inprogress-page/inprogress-page')
+            },
+            {
+                path: 'paused',
+                loadComponent: () => import('./pages/dashboard/components/paused-page/paused-page')},
+            {
+                path: 'late',
+                loadComponent: () => import('./pages/dashboard/components/late-page/late-page')
+            },
+            {
+                path: 'finished',
+                loadComponent: () => import('./pages/dashboard/components/finished-page/finished-page')
+            },
+            
 
         ]
     }

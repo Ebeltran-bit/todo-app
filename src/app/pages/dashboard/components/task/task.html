@@ -1,67 +1,69 @@
 <div class="task-panel-container">
-    <div class="task-panel-header">
-        <h2 class="task-panel-title">New Task.</h2>
-        <p class="task-panel-subtitle">Create and configure your task</p>
-    </div>
-
-    <div class="task-panel-section">
-        <h3 class="task-panel-section-title">Details</h3>
-
-        <div class="task-panel-field">
-            <label class="task-panel-label">Title</label>
-            <input class="task-panel-input" type="text" placeholder="Task title..." />
+    <p-card>
+        <div class="task-panel-header">
+            <h2 class="task-panel-title">New Task.</h2>
+            <p class="task-panel-subtitle">Create and configure your task</p>
         </div>
 
-        <div class="task-panel-field">
-            <label class="task-panel-label">Description</label>
-            <textarea class="task-panel-textarea" placeholder="Describe the task..."></textarea>
+        <div class="task-panel-section">
+            <h3 class="task-panel-section-title">Details</h3>
+
+            <div class="task-panel-field">
+                <label class="task-panel-label">Title</label>
+                <input class="task-panel-input" type="text" placeholder="Task title..." />
+            </div>
+
+            <div class="task-panel-field">
+                <label class="task-panel-label">Description</label>
+                <textarea class="task-panel-textarea" placeholder="Describe the task..."></textarea>
+            </div>
+
+            <div class="task-panel-field">
+                <h3 class="task-panel-section-title">List</h3>
+                <p-select
+                    [options]="categories"
+                    [(ngModel)]="selectedCategory"
+                    optionLabel="name"
+                    placeholder="Select a category"
+                    class="w-full md:w-56"
+                />
+            </div>
+
+            <div class="task-panel-field">
+                <h3 class="task-panel-section-title">Status</h3>            
+                <p-select
+                    [options]="status"
+                    [(ngModel)]="selectedStatus"
+                    optionLabel="name"
+                    placeholder="Select a status"
+                    class="w-full md:w-56"
+                />
+            </div>
+
+            <div class="task-panel-field task-panel-field--inline">
+                <h3 class="task-panel-section-title">Due Date</h3>
+                <p-datepicker [(ngModel)]="dueDate" />
+            </div>
         </div>
 
-        <div class="task-panel-field">
-            <h3 class="task-panel-section-title">List</h3>
-            <p-select
-                [options]="categories"
-                [(ngModel)]="selectedCategory"
-                optionLabel="name"
-                placeholder="Select a category"
-                class="w-full md:w-56"
-            />
-        </div>
-
-        <div class="task-panel-field">
-            <h3 class="task-panel-section-title">Status</h3>            
-            <p-select
-                [options]="status"
-                [(ngModel)]="selectedStatus"
-                optionLabel="name"
-                placeholder="Select a status"
-                class="w-full md:w-56"
-            />
-        </div>
-
-        <div class="task-panel-field task-panel-field--inline">
-            <h3 class="task-panel-section-title">Due Date</h3>
-            <p-datepicker [(ngModel)]="dueDate" />
-        </div>
-    </div>
-
-    
-
-    
-
-    <div class="task-panel-header">
-        <h2 class="task-panel-title">Subtasks</h2>
-        <p class="task-panel-subtitle">Manage your subtasks</p><br>
         
-        <a routerLink="/dashboard/tasks/non-started" routerLinkActive="active-item" class="nav-link">
-            <i class="pi pi-plus"></i>
-            <span>New task</span>
-        </a>
-        
-    </div>
 
-    <div class="task-panel-footer">
-        <button class="task-panel-btn-cancel">Cancel</button>
-        <button class="task-panel-btn-create">Create Task</button>
-    </div>
+        
+
+        <div class="task-panel-header">
+            <h2 class="task-panel-title">Subtasks</h2>
+            <p class="task-panel-subtitle">Manage your subtasks</p><br>
+            
+            <a routerLink="/dashboard/tasks/non-started" routerLinkActive="active-item" class="nav-link">
+                <i class="pi pi-plus"></i>
+                <span>New task</span>
+            </a>
+            
+        </div>
+
+        <div class="task-panel-footer">
+            <button class="task-panel-btn-cancel" (click)="taskPanel.close()">Cancel</button>
+            <button class="task-panel-btn-create">Create Task</button>
+        </div>
+    </p-card>
 </div>
