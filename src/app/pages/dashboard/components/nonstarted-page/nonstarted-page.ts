@@ -4,7 +4,6 @@ import { TasksAccordionComponent, Task } from "../../../../shared/components/tas
 
 @Component({
   selector: 'app-nonstarted-page',
-  standalone: true,
   imports: [TaskViewComponent, TasksAccordionComponent],
   templateUrl: './nonstarted-page.html',
 })

@@ -1,3 +1,12 @@
-<h1>In Progress Tasks</h1>
+<div class="in-progress-container">
 
-<app-task-view />
+    <h1>In Progress Tasks</h1>
+
+    <div class="new-task-container">
+        <app-task-view /><br>
+    </div>
+
+    <div class="accordion-container">
+            <app-tasks-accordion [tasks]="inProgressTasks" />
+    </div>
+</div>

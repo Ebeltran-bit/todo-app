@@ -1,10 +1,29 @@
 import { Component } from '@angular/core';
 import { TaskViewComponent } from "../../../../shared/components/task-view.component/task-view.component";
+import { TasksAccordionComponent, Task } from "../../../../shared/components/tasks-accordion.component/tasks-accordion.component";
 
 @Component({
   selector: 'app-inprogress-page',
-  imports: [TaskViewComponent],
+  imports: [TaskViewComponent, TasksAccordionComponent],
   templateUrl: './inprogress-page.html',
   
 })
-export default class InprogressPageComponent {}
+export default class InprogressPageComponent {
+
+  inProgressTasks: Task[] = [
+      { 
+        task: "Task 1", 
+        date: new Date("2026-06-01"), 
+        subtask: "Subtask 1", 
+        category: "Category 1" 
+      },
+  
+      { 
+        task: "Task 2", 
+        date: new Date("2026-06-04"), 
+        subtask: "Subtask 2", 
+        category: "Category 2" 
+      },
+  
+    ];
+}
