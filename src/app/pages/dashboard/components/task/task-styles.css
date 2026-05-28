@@ -2,8 +2,6 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    height: 100vh;
-    background: #1e2030;
     padding: 16px 0;
     color: white;
     overflow-y: auto;
@@ -70,7 +68,7 @@
 }
 
 .task-panel-input:focus {
-    border-color: #4f46e5;
+    border-color: #2596be;
 }
 
 .task-panel-textarea {
@@ -89,7 +87,7 @@
 }
 
 .task-panel-textarea:focus {
-    border-color: #4f46e5;
+    border-color: #2596be;
 }
 
 /* ── Option lists (status / category) ── */
@@ -117,7 +115,7 @@
 }
 
 .active-task-panel-item {
-    background: #4f46e5 !important;
+    background: #2596be !important;
     color: white !important;
     border-radius: 8px;
     margin: 0 8px;
@@ -162,7 +160,7 @@
 .task-panel-btn-create {
     flex: 1;
     padding: 8px 0;
-    background: #4f46e5;
+    background: #2596be;
     border: none;
     border-radius: 6px;
     color: white;
@@ -173,5 +171,5 @@
 }
 
 .task-panel-btn-create:hover {
-    background: #4338ca;
+    background: #2596be;
 }

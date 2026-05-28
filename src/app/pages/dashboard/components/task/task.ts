@@ -4,11 +4,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 import { FormsModule } from '@angular/forms'; 
 import { DatePickerModule } from 'primeng/datepicker';
 import { SelectModule } from 'primeng/select';
+import { Card } from "primeng/card";
 
 @Component({
   selector: 'app-task',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive,  FormsModule, DatePickerModule, SelectModule],
+  imports: [RouterLink, RouterLinkActive, FormsModule, DatePickerModule, SelectModule, Card],
   templateUrl: './task.html',
   styleUrls: ['./task-styles.css']
 })

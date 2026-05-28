@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SidebarHeaderComponent } from "./sidebar-header/sidebar-header";
 import { SidebarMenuComponent } from "./sidebar-menu/sidebar-menu";
+import { Card } from "primeng/card";
 
 
 interface MenuOption {
@@ -15,7 +16,7 @@ interface MenuOption {
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [SidebarHeaderComponent, SidebarMenuComponent],
+  imports: [SidebarHeaderComponent, SidebarMenuComponent, Card],
   templateUrl: './sidebar.html',
   styleUrls: ['../../dashboard-styles.css']
 })

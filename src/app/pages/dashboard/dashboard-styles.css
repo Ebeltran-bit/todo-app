@@ -2,10 +2,6 @@
 .sidebar-container {
     display: flex;
     flex-direction: column;
-    width: 200px;
-    height: 100vh;
-    background: #1e2030;
-    padding: 16px 0;
     color: white;
 }
 
@@ -87,7 +83,7 @@
 }
 
 .active-item {
-    background: #4f46e5 !important;
+    background: #2596be !important;
     color: white !important;
     border-radius: 8px;
     margin: 0 8px;
