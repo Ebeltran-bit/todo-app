@@ -1,23 +1,16 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AccordionModule } from 'primeng/accordion';
 import { TaskViewComponent } from "../../../../shared/components/task-view.component/task-view.component";
-
-interface NonstartedTasks {
-  task: string;
-  date: Date;
-  subtask: string;
-  category: string;
-}
+import { TasksAccordionComponent, Task } from "../../../../shared/components/tasks-accordion.component/tasks-accordion.component";
 
 @Component({
   selector: 'app-nonstarted-page',
   standalone: true,
-  imports: [TaskViewComponent, CommonModule, AccordionModule],
+  imports: [TaskViewComponent, TasksAccordionComponent],
   templateUrl: './nonstarted-page.html',
 })
 export default class NonstartedPageComponent {
-  nonstartedTasks: NonstartedTasks[] = [
+
+  nonstartedTasks: Task[] = [
     { 
       task: "Task 1", 
       date: new Date("2026-06-01"), 

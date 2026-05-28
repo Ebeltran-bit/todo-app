@@ -1,17 +1,13 @@
-<h1>Non Started Tasks</h1>
-<app-task-view /><br>
+<div class="nonstarted-container">
 
-<div class="accordion-panel">
-    <p-accordion>
-        @for(item of nonstartedTasks; track item.task) {
-            <p-accordion-panel [value]="item.task">
-            <p-accordion-header>{{ item.task }}</p-accordion-header>
-            <p-accordion-content>
-                <span><i class="pi pi-calendar"></i> {{ item.date | date:'dd-MM-yyyy' }}</span><br><br>
-                <span><i class="pi pi-list"></i> {{ item.subtask }}</span><br><br>
-                <span><i class="pi pi-circle-fill"></i> {{ item.category }}</span><br>
-            </p-accordion-content>
-            </p-accordion-panel>
-        }
-    </p-accordion>
+    <h1>Non Started Tasks</h1>
+
+    <div class="new-task-container">
+        <app-task-view /><br>
+    </div>
+
+    <div class="accordion-container">
+        <app-tasks-accordion [tasks]="nonstartedTasks" />
+    </div>
+
 </div>
