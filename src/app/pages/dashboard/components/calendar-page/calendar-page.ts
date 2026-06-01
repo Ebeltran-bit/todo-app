@@ -1,9 +1,13 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { DatePickerModule } from 'primeng/datepicker';
 
 @Component({
   selector: 'app-calendar-page',
-  imports: [],
+  standalone: true,
+  imports: [FormsModule, DatePickerModule],
   templateUrl: './calendar-page.html',
-  styleUrl: './calendar-page.scss',
 })
-export class CalendarPage {}
+export default class CalendarPageComponent {
+  date: Date = new Date();
+}
