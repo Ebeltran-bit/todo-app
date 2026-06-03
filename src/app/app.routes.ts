@@ -45,6 +45,10 @@ export const routes: Routes = [
                 path: 'finished',
                 loadComponent: () => import('./pages/dashboard/components/finished-page/finished-page')
             },
+            {
+                path: 'calendar',
+                loadComponent: () => import('./pages/dashboard/components/calendar-page/calendar-page')
+            },
             
 
         ]
