@@ -1,6 +1,8 @@
 import {  Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
 
 interface MenuOption {
   label: string;
@@ -16,12 +18,31 @@ interface CategoryOption {
 
 @Component({
   selector: 'app-sidebar-menu',
-  imports: [RouterLink, RouterLinkActive, CommonModule],
+  imports: [RouterLink, RouterLinkActive, CommonModule, FormsModule, ButtonModule],
   templateUrl: './sidebar-menu.html',
   styleUrls: ['../../../dashboard-styles.css']
 })
 
 export class SidebarMenuComponent {
+
+  showAddCategory = false;
+  newCategoryName = '';
+
+  toggleAddCategory(event: Event) {
+    event.preventDefault();
+    this.showAddCategory = !this.showAddCategory;
+  }
+
+  addCategory() {
+    this.categoryOptions.push({
+      label: this.newCategoryName,
+      route: `/dashboard/category/${this.newCategoryName}`,
+      icon: 'pi pi-circle-fill'
+    });
+    this.newCategoryName = '';
+    this.showAddCategory = false;
+  }
+
   menuOptions: MenuOption[] = [ 
 
     {
