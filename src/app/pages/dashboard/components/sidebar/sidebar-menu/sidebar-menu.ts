@@ -33,15 +33,6 @@ export class SidebarMenuComponent {
     this.showAddCategory = !this.showAddCategory;
   }
 
-  addCategory() {
-    this.categoryOptions.push({
-      label: this.newCategoryName,
-      route: `/dashboard/category/${this.newCategoryName}`,
-      icon: 'pi pi-circle-fill'
-    });
-    this.newCategoryName = '';
-    this.showAddCategory = false;
-  }
 
   menuOptions: MenuOption[] = [ 
 
@@ -86,11 +77,7 @@ export class SidebarMenuComponent {
       icon: 'pi pi-circle-fill icon-green'
     },
 
-    {
-      label: 'Add New List',
-      route: '/dashboard/add-list',
-      icon: 'pi pi-plus'
-    }
+    
   ]
 
   
