@@ -1,11 +1,17 @@
 <div class="accordion-panel">
+    <!-- Accordion component that shows each task as an expandable panel -->
     <p-accordion>
+        <!-- Iterates over the tasks array and shows one panel per task -->
         @for(item of tasks; track item.task) {
             <p-accordion-panel [value]="item.task">
+            <!-- Displays the task name as the clickable header -->
             <p-accordion-header>{{ item.task }}</p-accordion-header>
                 <p-accordion-content>
+                    <!-- Displays the due date formatted as dd-MM-yyyy -->
                     <span><i class="pi pi-calendar"></i> {{ item.date | date:'dd-MM-yyyy' }}</span><br><br>
+                    <!-- Displays the subtask name -->
                     <span><i class="pi pi-list"></i> {{ item.subtask }}</span><br><br>
+                    <!-- Displays the category of the task -->
                     <span><i class="pi pi-circle-fill"></i> {{ item.category }}</span>
                 </p-accordion-content>
             </p-accordion-panel>
