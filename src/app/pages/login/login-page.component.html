@@ -4,17 +4,22 @@
     <p>Login to your account to manage your tasks.</p>
     
     <h3>Name</h3>
+    <!-- Input field for the username, pInputText applies PrimeNG styling -->
     <input pInputText type="text" name="name" placeholder="Enter your username" />
 
     <h3>Password</h3>
+    <!-- We use [feedback] to disable password strength feedback -->
+    <!-- And [toggleMask] to show/hide password -->
     <p-password name="password" 
                 placeholder="Enter your password" 
                 [feedback]="false" 
                 [toggleMask]="true" />
     <br><br>
+    <!-- This button navigates to the main dashboard after login -->
     <p-button type="submit" label="Login" severity="info" routerLink="/dashboard/nonstarted"/>
     
     <h5>Don't have an account?</h5>
+    <!-- Link to the signup page, routerLinkActive applies a CSS class when the route is active -->
     <a routerLink="/signup" routerLinkActive="active-item">Sign Up here</a>
   </p-card>
 </div>
