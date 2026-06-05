@@ -2,17 +2,15 @@
         <h2>Tasks</h2>
     </div>
 
+    <!-- Shows the navigation menu options dynamically from menuOptions array -->
     <ul class="nav-list">
 
         @for(item of menuOptions; track item.route){
         <li>
-
-        
             <a [routerLink]="item.route" routerLinkActive="active-item" class="nav-link">
                 <i class="{{item.icon}}"></i>
                 <span>{{item.label}}</span>
             </a>
-
         </li>
         }
 
@@ -22,6 +20,7 @@
         <h2>Category</h2>
     </div>
 
+    <!-- Shows the category options dynamically from categoryOptions array -->
     <ul class="nav-list">
     
     @for(item of categoryOptions; track item.route){
@@ -33,6 +32,7 @@
     </li>
     }
 
+    <!-- Button that toggles the visibility of the add category input field -->
     <li>
         <a href="#" class="nav-link" (click)="toggleAddCategory($event)">
             <i class="pi pi-plus"></i>
@@ -40,6 +40,7 @@
         </a>
     </li>
 
+    <!-- Input field and button to add a new category, only visible when showAddCategory is true -->
     @if(showAddCategory) {
         <li class="add-category-field">
             <input 
@@ -52,10 +53,9 @@
 
 </ul>
 
-        
-
     <div class="sidebar-south">
 
+    <!-- Bottom section of the sidebar with calendar and sign out options -->
     <ul class="nav-list">
         <li>
         <a routerLink="/dashboard/calendar" routerLinkActive="active-item" class="nav-link">
@@ -64,6 +64,7 @@
         </a>
         </li>
         <li>
+        <!-- Sign out link that navigates back to the login page -->
         <a routerLink="/" routerLinkActive="active-item" class="nav-link">
             <i class="pi pi-sign-out"></i>
             <span>Sign Out</span>

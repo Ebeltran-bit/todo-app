@@ -1,17 +1,21 @@
 <div class="layout-container">
 
     <div class="sidebar-left">
+        <!-- Shows the sidebar component with navigation menu and categories -->
         <app-sidebar />
     </div>
 
     <div class="main-content">
         <div>
+            <!-- Shows the current page based on the active route -->
             <router-outlet />
         </div>
     </div>
 
+    <!-- Only renders the task panel if isOpen() returns true -->
     @if (taskPanel.isOpen()) {
         <div class="sidebar-right">
+            <!-- Shows the task creation panel on the right side -->
             <app-task />
         </div>
     }
