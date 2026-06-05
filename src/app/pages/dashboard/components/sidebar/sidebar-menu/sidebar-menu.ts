@@ -67,13 +67,13 @@ export class SidebarMenuComponent {
   categoryOptions: CategoryOption[] = [
     {
       label: 'Category 1',
-      route: '/dashboard/category-1',
+      route: '/dashboard/category',
       icon: 'pi pi-circle-fill icon-red'
     },
     
     {
       label: 'Category 2',
-      route: '/dashboard/category-2',
+      route: '/dashboard/category',
       icon: 'pi pi-circle-fill icon-green'
     },
 
