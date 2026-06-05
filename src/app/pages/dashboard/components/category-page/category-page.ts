@@ -8,7 +8,7 @@ import { Task, TasksAccordionComponent } from '../../../../shared/components/tas
   imports: [TaskViewComponent, TasksAccordionComponent],
   templateUrl: './category-page.html',
 })
-export class CategoryPageComponent {
+export default class CategoryPageComponent {
 
   categoryTasks: Task[] = [
         { 
