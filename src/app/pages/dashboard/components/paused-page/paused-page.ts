@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { TaskViewComponent } from "../../../../shared/components/task-view.component/task-view.component";
 import { Task, TasksAccordionComponent } from '../../../../shared/components/tasks-accordion.component/tasks-accordion.component';
 
@@ -6,7 +6,6 @@ import { Task, TasksAccordionComponent } from '../../../../shared/components/tas
   selector: 'app-paused-page',
   imports: [TaskViewComponent, TasksAccordionComponent],
   templateUrl: './paused-page.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class PausedPageComponent {
 

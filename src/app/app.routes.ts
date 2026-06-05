@@ -49,6 +49,10 @@ export const routes: Routes = [
                 path: 'calendar',
                 loadComponent: () => import('./pages/dashboard/components/calendar-page/calendar-page')
             },
+            {
+                path: 'category',
+                loadComponent: () => import('./pages/dashboard/components/category-page/category-page')
+            }
             
 
         ]

@@ -23,20 +23,34 @@
     </div>
 
     <ul class="nav-list">
-        
-        @for(item of categoryOptions; track item.route){
-        <li>
+    
+    @for(item of categoryOptions; track item.route){
+    <li>
+        <a [routerLink]="item.route" routerLinkActive="active-item" class="nav-link">
+            <i class="{{item.icon}}"></i>
+            <span>{{item.label}}</span>
+        </a>
+    </li>
+    }
 
-        
-            <a routerLink="{{item.route}}" routerLinkActive="active-item" class="nav-link">
-                <i class="{{item.icon}}"></i>
-                <span>{{item.label}}</span>
-            </a>
+    <li>
+        <a href="#" class="nav-link" (click)="toggleAddCategory($event)">
+            <i class="pi pi-plus"></i>
+            <span>Add New List</span>
+        </a>
+    </li>
 
-        </li>
-        }
-        
-    </ul>
+    @if(showAddCategory) {
+        <li class="add-category-field">
+            <input 
+                class="task-panel-input" 
+                type="text" 
+                [(ngModel)]="newCategoryName"
+                placeholder="Category name..." /><br>
+            <button pButton label="Add" severity="secondary"></button>
+        </li>}
+
+</ul>
 
         
 
